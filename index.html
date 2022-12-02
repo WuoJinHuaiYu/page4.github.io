@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zn">
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>画怖介绍</title>
+	<style>
+
+		body{
+			background-color: rgba(23,90,113,1.00);
+			display: flex;
+			justify-content: center;
+			/*字符居中*/
+		}
+		.a{
+			position: relative;
+			top: 200px;
+			font: 900 80px '';
+			color: #222;
+			cursor: pointer;
+			/*鼠标移动到字上，光标会变成可以点击的样子，而不是输入字符的样子*/
+			
+		}
+		.a span{
+			transition: .5s;
+			/*变亮延迟*/
+			transition-delay: calc(var(--i)*.1s);
+			/*每一个字之间的延迟*/
+		}
+		.a:hover span{
+			color: #fff;
+			text-shadow: 0 0 10px #fff,
+			0 0 20px #fff,
+			0 0 30px #fff;
+		}
+
+		.shell{
+			height: 100vh;
+			overflow-x: hidden;
+			perspective: 2px;
+		}
+		.shell div{
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-style: 30px;
+			letter-spacing: 5px;
+		}
+		.image{
+			transform: translateZ(-1px)scale(1.6);
+			background-size: cover;
+			height: 100vh;
+			z-index: -1;
+		}
+		.text{
+			height: 50vh;
+			background-color: #fff;
+		}
+		.text h1{
+			color: #000;
+			
+		}
+		.heading{
+			z-index: :-1;
+			transform: translateY(-30vh) translateZ(1px);
+			color: #fff;
+			font-size: 30px;
+		}
+		.ming{
+			height: 200px;
+			right: 1400px;
+			top: 910px;
+			position: relative;
+			perspective: 800px;
+			transform-style: preserve-3d;
+		}
+		.pian{
+			position: absolute;
+			height: 120px;
+			width: 210px;
+			transform: translateX(5px) rotateY(30deg) rotateX(10deg);
+			background-color: rgba(255,255,255,0.95);
+			display: flex;
+			align-items: center;
+		}
+		.pian .w0{
+			background-color: #000;
+			line-height: 1;
+			color: #fff;
+			padding: 0 10px;
+			margin: 0 15px 0 10px;
+			display: inline-flex;
+			
+		}
+		.pian .w1{
+			color: #000;
+		}
+		.ming::before {
+			content: '';
+			height: 120px;
+			width: 210px;
+			position: absolute;
+			margin-top: -5px;
+			margin-left: -5px;
+			border: 5px solid #000;
+			transform: translateX(-5px) rotateY(-40deg) rotateX(20deg) scale(1.05);
+		}
+		.ming:hover>div,
+		.ming:hover::before{
+			transform: none;
+		}
+		.ming>div,
+		.ming:hover::before{
+			transition: .3s;
+		}
+	</style>
+	
+</head>
+<style>
+		
+	
+	
+	</style>
+
+<body>
+	<div class="a">
+	
+		<span style="--i:1">\</span>
+		<span style="--i:2">P</span>
+		<span style="--i:3">A</span>
+		<span style="--i:4">I</span>
+		<span style="--i:5">N</span>
+		<span style="--i:6">T</span>
+		<span style="--i:7">I</span>
+		<span style="--i:8">N</span>
+		<span style="--i:9">G</span>
+		<span style="--i:10">/</span>
+		<span style="--i:11">T</span>
+		<span style="--i:12">E</span>
+		<span style="--i:13">R</span>
+		<span style="--i:14">R</span>
+		<span style="--i:15">O</span>
+		<span style="--i:15">R</span>
+	</div>
+	<div class="shell">
+	    <div class="image" style="background-image: url(4.4.png);"></div>
+		<div class="heading">
+		   <h1>画怖</h1>
+		</div>
+		<div class="text">
+			<h1> 第一画 《白事》</h1>
+			<h1>封建糟粕</h1>
+			<h1>文字恶意</h1>
+			<h1>歧视的目光撕裂了和平
+				孕育出扭曲憎恨的灵魂</h1>
+			
+		<h1></h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.2.png);"></div>
+		<div class="text">
+
+			<h1>第二画《信仰》<br>同样是供奉，有人看到了血肉腥恶，有人看到了花草芬芳</h1>
+			
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.7.png);"></div>
+		<div class="text">
+			
+		<h1>第三画 《破土》<br>我可以忍着不难过，但无法忍着不怀念</h1>
+		</div>
+		
+		<div class="image" style="background-image: url(4.8.png);"></div>
+		<div class="text">
+			
+		<h1>第四画 《动物世界》<br>对生态的破坏，对动物的虐待，终会报应回人的身上<br>身份置换，从食物链顶端跌落，谁又能逃过“人”的魔爪</h1>
+		</div>
+		
+		<div class="image" style="background-image: url(4.3.png);"></div>
+		<div class="text">
+			
+		<h1>第五画 《影》<br>对纯粹色彩不容污染的极致追求成为执念<br>混合出的浓黑成为如影随形的梦魇<br>肉体与影子，何者才是本体？</h1>
+		</div>
+		
+		<div class="image" style="background-image: url(4.9.png);"></div>
+		<div class="text">
+			
+		<h1>第六画  《人学》<br>任何时代，都不缺少无畏的异端<br>我在辱骂与践踏声中比以往更坚定我的信念</h1>
+		</div>
+	
+		<div class="image" style="background-image: url(4.10.png);"></div>
+		<div class="text">
+			
+		<h1>第七画 《净土》<br>每个人都有珍藏的宝贵童年<br>小小的缺憾联结成大大的世界</h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.11.png);"></div>
+		<div class="text">
+			
+		<h1>第八画 《绯色之兽》<br>越是隐私之事，越能激发他人的八卦之心<br>心中的“兽”被剖出公示，独留悲哀之人遍体鳞伤</h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.12.png);"></div>
+		<div class="text">
+			
+		<h1>第九画 《海上燃犀图》<br>人有七情：喜、怒、哀、惧、爱、恶、欲，串联层层幻境<br>燃烧的犀角在水中穿行，跨越虚妄走向黎明</h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.13.png);"></div>
+		<div class="text">
+			
+		<h1>第十画 《逆旅》<br>变速的相机中可窥得时间的交叠<br>倒退的一步，是为了更长远地前行</h1>
+		</div>
+		
+		<div class="image" style="background-image: url(4.14.png);"></div>
+		<div class="text">
+			
+		<h1>第十一画 《薛定谔的猫》<br>意识物质二元论，波粒二象性，黄油猫悖论，色彩膨胀……一切假想可为“真”<br>学习，不应是唯分数论，而是教我们理性而大胆地去思考和创造生活</h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.15.png);"></div>
+		<div class="text">
+			
+		<h1>第十二画 《Restart》<br>象征主义的画作，浸透着埃博拉病毒的鲜血<br>痛苦地谴责着生于地球又疯狂掠夺着地球的人类</h1>
+		</div>
+		
+		
+		<div class="image" style="background-image: url(4.16.png);"></div>
+		<div class="text">
+			
+		<h1>第十三画 《和合》<br>众生不可思议<br>众生生死之事，非你我可猜度</h1>
+		</div>
+		
+		
+		
+		<div class="image" style="background-image: url(4.17.png);"></div>
+		<div class="text">
+			
+		<h1>第十四画 《山海》<br>虽然这一步倒退，可能就是万丈深渊<br>但换来的，却是永恒的光明</h1>
+		</div>
+		<div class="image" style="background-image: url(4.18.png);"></div>
+	</div>
+	<a href="#" class="ming">
+		<div class="pian">
+			<h1><span class="w0">DSY</span><span class="w1">Back</span></h1>
+		</div></a>
+</body>
+</html>
